@@ -97,7 +97,9 @@ cd MoE_finetuning
 - Requirements to run the scripts can be found in the requirements.txt file, it is recommended to use a virtual environment: 
 
 ```python -m venv venv```
+
 ```source venv/bin/activate```
+
 ```pip install -r requirements.txt``` 
 
 - Install torch and CUDA for your device
@@ -129,7 +131,7 @@ This command runs your train.py script using the Accelerate library, which helps
 ### Evaluate the model
 You can then run the evaluation process using the command ```python eval.py --adapter_dir checkpoints --n 200 --batch_size 2```
 
-Feel free to visualize the results on the charts !
+Feel free to visualize the results on the chart !
 
 ### Test the finetuned model
 
