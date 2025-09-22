@@ -70,6 +70,7 @@ The rewarding function is based on the correctness of the final answer. If the f
 
 ## AdamW Optimizer
 The AdamW optimizer is used for training, which is a variant of the Adam optimizer that decouples weight decay from the gradient update. This helps in better regularization and often leads to improved performance and generalization of the model.
+
 <img src="media/adamw.png" alt="AdamW Optimizer" width="550"/>
 
 ## Automatic Mixed Precision (AMP)
@@ -141,9 +142,9 @@ After training the model for **1200 steps**, we can observe a significant improv
 - **Training Reward Function**: The training reward function shows a steady increase over the training steps, indicating that the model is learning to generate correct answers more frequently.
 ![Training Reward Function](media/reward_function.png)
 
-**Note**: My training was launched with Vllm set to false, due to the Windows OS compatibility issues on my computer. With that configuration, the training time was around 6 hours for 1200 steps on a single NVIDIA RTX A3000 Laptop GPU with 6GB of VRAM.
+**Note**: My training was launched with vLLM set to false, due to the Windows OS compatibility issues on my computer. With that configuration, the training time was around 6 hours for 1200 steps on a single NVIDIA RTX A3000 Laptop GPU with 6GB of VRAM.
 
-#### For your training, I configured 1000 steps, which should be enough to see a significant improvement in the model's performance with vllm set to true with under 4 hours of training time.
+#### For your training, I configured 1000 steps, which should be enough to see a significant improvement in the model's performance with vLLM set to true with under 4 hours of training time.
 
 - **Evaluation Accuracy**: The evaluation accuracy also shows an upward trend, demonstrating that the model's performance on unseen data is improving as it learns from the training data.
 
