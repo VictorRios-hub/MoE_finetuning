@@ -1,8 +1,6 @@
-# Implementing a PyTorch Training Loop
+# Finetuning IBM Granite MoE 1.3B with Reinforcement Learning GRPO on GSM8K dataset
 
-## Finetuning IBM Granite MoE 1.3B with Reinforcement Learning GRPO on GSM8K dataset
-
-This project demonstrates how to fine-tune the IBM Granite MoE 1.3B model using the GRPO (Generalized Reward Policy Optimization) algorithm on the GSM8K dataset. The training process leverages the capabilities of the `transformers` and `trl` libraries from Hugging Face, along with other essential libraries for efficient training and evaluation
+#### This project demonstrates how to fine-tune the IBM Granite MoE 1.3B model using the GRPO (Generalized Reward Policy Optimization) algorithm on the GSM8K dataset. The training process leverages the capabilities of the `transformers` and `trl` libraries from Hugging Face, along with other essential libraries for efficient training and evaluation
 
 ## Model Architecture
 ```
